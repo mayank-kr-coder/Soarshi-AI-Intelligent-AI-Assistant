@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Soarshi AI | Intelligent AI Assistant</title>
+
+    <meta name="description"
+          content="Soarshi AI is an intelligent AI assistant powered by Gemini and Groq. Chat, search, code, learn, and create effortlessly.">
+
+    <meta name="keywords"
+          content="Soarshi AI, AI Assistant, Chatbot, Gemini AI, Groq AI, Python AI">
+
+    <meta name="author" content="Mayank Kumar">
+    <meta name="theme-color" content="#0f172a">
+
+    <link rel="icon" href="{{ url_for('static', filename='jarvis.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="aurora"></div>
+
+<!-- ================= SIDEBAR ================= -->
+
+<aside class="sidebar" id="sidebar">
+
+    <button id="close-sidebar" aria-label="Close Menu">
+        ✕
+    </button>
+
+    <div class="sidebar-logo">
+        <h2>⚡ Soarshi AI</h2>
+        <p>Your Intelligent AI Assistant</p>
+    </div>
+
+    <button class="new-chat-btn">
+        ✨ New Chat
+    </button>
+
+    <hr>
+
+    <div class="sidebar-section">
+
+        <h3>👨‍💻 Developer</h3>
+
+        <p>Mayank Kumar</p>
+
+    </div>
+
+    <hr>
+
+    <div class="sidebar-section">
+
+        <h3>🚀 Features</h3>
+
+        <ul>
+
+            <li>💬 AI Chat</li>
+
+            <li>🎤 Voice Assistant</li>
+
+            <li>🌐 Google Search</li>
+
+            <li>💻 Coding Help</li>
+
+            <li>📄 Content Writing</li>
+
+            <li>📚 Learning Assistant</li>
+
+            <li>🧠 Problem Solving</li>
+
+            <li>😂 Tell Jokes</li>
+
+            <li>📅 Date & Time</li>
+
+            <li>🔗 Open Google</li>
+
+            <li>▶ Open YouTube</li>
+
+            <li>📧 Open Gmail</li>
+
+            <li>📘 Open Facebook</li>
+
+            <li>📷 Open Instagram</li>
+
+            <li>💼 Open LinkedIn</li>
+
+            <li>🐙 Open GitHub</li>
+
+            <li>🤖 Open ChatGPT</li>
+
+        </ul>
+
+    </div>
+
+    <hr>
+
+    <div class="sidebar-section">
+
+        <h3>⚙ Powered By</h3>
+
+        <ul>
+
+            <li>🐍 Python</li>
+
+            <li>✨ Gemini API</li>
+
+            <li>⚡ Groq API</li>
+
+            <li>🔊 Edge TTS</li>
+
+            <li>🎨 HTML • CSS • JavaScript</li>
+
+        </ul>
+
+    </div>
+
+    <hr>
+
+    <button id="clearBtn">
+        🗑 Clear Conversation
+    </button>
+
+</aside>
+
+<!-- ================= MAIN ================= -->
+
+<div class="main">
+
+    <!-- Top Bar -->
+
+    <header class="top-bar">
+
+        <button class="menu-btn"
+                id="menu-btn"
+                aria-label="Open Menu">
+            ☰
+        </button>
+
+        <h1>⚡ Soarshi AI</h1>
+
+        <button class="settings-btn">
+            ⚙
+        </button>
+
+    </header>
+
+    <!-- Welcome Screen -->
+
+    <section class="welcome-screen">
+
+        <div class="welcome-icon">
+            ⚡
+        </div>
+
+        <h2>Hello, I'm Soarshi AI</h2>
+
+        <p>
+            Your intelligent AI assistant powered by Gemini and Groq.
+            Ask me anything and let's build something amazing.
+        </p>
+
+        <div class="suggestions">
+
+            <button>💻 Write Code</button>
+
+            <button>📚 Explain Concepts</button>
+
+            <button>✍ Write Content</button>
+
+            <button>🧠 Solve Problems</button>
+
+            <button>🌐 Search the Web</button>
+
+            <button>🚀 Generate Ideas</button>
+
+        </div>
+
+    </section>
+
+    <!-- Chat Messages -->
+
+    <div class="chat-container" id="chat-container">
+
+    </div>
+
+    <!-- Typing Indicator -->
+
+    <div id="typing-indicator">
+
+        <span></span>
+
+        <span></span>
+
+        <span></span>
+
+    </div>
+
+    <!-- Bottom Input -->
+
+    <div class="input-container">
+
+        <button class="voice-btn"
+                id="voice-btn"
+                aria-label="Voice">
+            🎤
+        </button>
+
+        <div id="listening-status">
+            🎤 Listening...
+        </div>
+
+        <input
+            type="text"
+            id="message-input"
+            placeholder="Ask Soarshi AI anything..."
+            autocomplete="off"
+        >
+
+        <div id="ai-status"></div>
+
+        <button class="send-btn"
+                id="send-btn"
+                aria-label="Send">
+            ➜
+        </button>
+
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <p>
+            ⚡ Powered by Gemini • Groq • Python
+        </p>
+
+        <p>
+            © 2026 Soarshi AI • Developed by Mayank Kumar
+        </p>
+
+    </footer>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+Flask
+python-dotenv
+groq
+google-generativeai
+SpeechRecognition
+edge-tts
+pyjokes
+pywhatkit
+pyautogui
+Pillow
+requests
+openai-whisper
+gunicorn
