@@ -17,7 +17,7 @@ def ask_groq(question):
             {
                 "role": "system",
                 "content": """
-You are Jarvis AI Assistant.
+You are Soarshi AI Assistant.
 
 Rules:
 1. Answer briefly.
