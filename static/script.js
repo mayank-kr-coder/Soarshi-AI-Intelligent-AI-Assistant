@@ -113,8 +113,8 @@ async function sendMessage(){
 
         if(loading){
 
-            loading.querySelector(".bubble").innerHTML =
-            "⚡ Jarvis is waking up on Render. This may take up to 60 seconds.";
+          loading.querySelector(".bubble").innerHTML =
+"⚡ Soarshi AI is waking up on Render. This may take up to 60 seconds.";
 
         }
 
@@ -204,7 +204,7 @@ inputBox.addEventListener("keypress",function(event){
 const voiceBtn = document.getElementById("voice-btn");
 
 const statusText = document.getElementById("listening-status");
-const statusDiv = document.getElementById("jarvis-status");
+const statusDiv = document.getElementById("ai-status");
 
 const SpeechRecognition =
     window.SpeechRecognition || window.webkitSpeechRecognition;
