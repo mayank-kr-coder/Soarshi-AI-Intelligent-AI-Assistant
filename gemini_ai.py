@@ -16,7 +16,7 @@ model = genai.GenerativeModel("gemini-2.5-flash")
 
 def ask_gemini(question):
 
-  prompt = f"""
+    prompt = f"""
 You are Soarshi AI, an intelligent AI assistant developed by Mayank Kumar.
 
 Rules:
