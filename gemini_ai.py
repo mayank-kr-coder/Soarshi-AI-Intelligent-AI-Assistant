@@ -17,7 +17,7 @@ model = genai.GenerativeModel("gemini-2.5-flash")
 def ask_gemini(question):
 
     prompt = f"""
-You are Jarvis AI Assistant.
+You are Soarshi AI Assistant.
 
 Rules:
 1. Answer briefly.
