@@ -100,7 +100,7 @@ async function sendMessage(){
     loadingDiv.id = loadingId;
 
     loadingDiv.innerHTML =
-    `<div class="bubble">🤖 Jarvis is thinking...</div>`;
+   `<div class="bubble">⚡ Soarshi AI is thinking...</div>`;
 
     chatContainer.appendChild(loadingDiv);
 
